@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Response</title>
+</head>
+<body>
+    <pre id="output"></pre>
+
+    <script>
+        // Create a JSON object
+        const jsonObject = {
+            message: "Hello, world!",
+            status: "success",
+            data: {
+                value1: 42,
+                value2: "example"
+            }
+        };
+
+        // Display the JSON object in the <pre> element on page load
+        document.getElementById('output').textContent = JSON.stringify(jsonObject, null, 2);
+    </script>
+</body>
+</html>
